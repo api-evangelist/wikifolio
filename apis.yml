@@ -1,7 +1,28 @@
 aid: wikifolio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wikifolio.png
 name: Wikifolio
-description: Wikifolio is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  wikifolio (wikifolio Financial Technologies AG) is a European social- and
+  copy-trading platform that lets everyday investors follow, compare, and invest
+  in the strategies of experienced traders. Traders build virtual portfolios
+  ("wikifolios") that are published transparently; in Germany, Austria, and
+  Switzerland the best-performing wikifolios can be securitized as exchange-listed
+  wikifolio certificates that investors buy through their bank or broker. The
+  platform surfaces thousands of trading ideas with published rules, fees, and
+  live performance tracking. wikifolio was surfaced as a portfolio company of
+  Speedinvest and is profiled in the API Evangelist network; it does not appear
+  to publish a public developer API at this time.
 url: https://raw.githubusercontent.com/api-evangelist/wikifolio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- FinTech
+- Social Trading
+- Copy Trading
+- Investing
+- Wealth Management
+- Certificates
+- Europe
 apis: []
+common:
+- type: DomainSecurity
+  url: security/wikifolio-domain-security.yml
+- type: Website
+  url: https://www.wikifolio.com
+- type: Blog
+  url: https://www.wikifolio.com/en/int/blog
+- type: HelpCenter
+  url: https://www.wikifolio.com/en/int/faq
+- type: GettingStarted
+  url: https://www.wikifolio.com/en/int/how-to-invest/how-it-works
+- type: TermsOfService
+  url: https://www.wikifolio.com/en/int/legal/gtc
+- type: PrivacyPolicy
+  url: https://www.wikifolio.com/en/int/legal/disclaimer
+- type: LLMsTxt
+  url: llms/wikifolio-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
